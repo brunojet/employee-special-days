@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition><![CDATA[// Create the answer variable
+var answer = true;
+
+// Get today's date and determine which day of the week it is
+var rightNow = new GlideDateTime();
+var dayOfWeek = rightNow.getDayOfWeekLocalTime();
+
+// If today is Saturday (6) or Sunday (7), set the answer variable to false
+// so the Run this script field's script does not execute.
+// Monday = 1, Tuesday, = 2, etc.
+if(dayOfWeek == 6 || dayOfWeek == 7){
+	answer = false;
+}
+
+// End script with something that resolves to true or false. 
+answer;]]></condition>
+        <conditional>true</conditional>
+        <entered_time>23:59:59</entered_time>
+        <name>Find Employees with special occasion today</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>31</run_dayofmonth>
+        <run_dayofweek>2</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2019-11-11 16:50:36</run_start>
+        <run_time>1970-01-01 23:59:59</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[// Get today's month and day to compare with occasions
+var month = rightNow.getMonthLocalTime();
+var day = rightNow.getDayOfMonthLocalTime();
+
+// Occasion records have a month and day field.
+// Query the database for Occasion records that match 
+// today's month and day.
+var occToday = new GlideRecord('x_snc_employee_spe_occasions');
+occToday.addQuery('occasion_month','=',month);
+occToday.addQuery('occasion_day','=',day);
+occToday.query();
+
+// Write a log message for each Employee celebrating an occasion 
+while(occToday.next()){
+	gs.info("Occasion record: " + occToday.number);
+	gs.eventQueue('x_snc_employee_spe.employeeOccasion',occToday,occToday.number,occToday.u_employee.name,'my_queue');
+}
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-11 17:37:21</sys_created_on>
+        <sys_id>e60060f91b490010411dea8bbc4bcb34</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Find Employees with special occasion today</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sysauto_script_e60060f91b490010411dea8bbc4bcb34</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-12 16:47:55</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>This event is fired for each employee with a special occasion on the day the SSE executes</description>
+        <event_name>x_snc_employee_spe.employeeOccasion</event_name>
+        <fired_by>Scheduled Script Execution - Find Employees with special occasions today</fired_by>
+        <queue/>
+        <suffix>employeeOccasion</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-11 17:58:02</sys_created_on>
+        <sys_id>103d2c391b890010411dea8bbc4bcb9c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_employee_spe.employeeOccasion</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sysevent_register_103d2c391b890010411dea8bbc4bcb9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-12 16:39:18</sys_updated_on>
+        <table>x_snc_employee_spe_occasions</table>
+    </sysevent_register>
+</record_update>

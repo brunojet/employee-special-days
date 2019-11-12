@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="business_calendar">
+    <business_calendar action="INSERT_OR_UPDATE">
+        <calendar_name>Company Fiscal Calendar</calendar_name>
+        <description/>
+        <is_legacy_schedule>false</is_legacy_schedule>
+        <label>Company Fiscal Calendar</label>
+        <parent/>
+        <plural_label>Company Fiscal Calendar</plural_label>
+        <sys_class_name>business_calendar</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-11 17:01:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82e1207d1b490010411dea8bbc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company Fiscal Calendar</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>business_calendar_82e1207d1b490010411dea8bbc4bcb85</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-11 17:01:51</sys_updated_on>
+        <time_zone/>
+    </business_calendar>
+</record_update>

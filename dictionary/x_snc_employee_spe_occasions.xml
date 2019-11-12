@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Occasions" max_length="40" name="x_snc_employee_spe_occasions" type="collection">
+    <element label="Occasions" max_length="40" name="x_snc_employee_spe_occasions" sizeclass="3" type="collection">
         <element label="Employee email" mandatory="true" max_length="120" name="employee_email" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Occasion day" max_length="40" name="occasion_day" type="integer"/>
+        <element label="Occasion month" max_length="40" name="occasion_month" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="true" label="Private" max_length="40" name="private" type="boolean"/>
         <element label="Employee" mandatory="true" max_length="32" name="u_employee" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="birthday" label="Special occasion" mandatory="true" max_length="40" name="u_occasion" type="string">
             <choice>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="number" label="Number" language="en" table="x_snc_employee_spe_occasions">
+    <sys_documentation element="occasion_day" label="Occasion day" language="en" table="x_snc_employee_spe_occasions">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>occasion_day</element>
             <help/>
             <hint/>
-            <label>Number</label>
+            <label>Occasion day</label>
             <language>en</language>
             <name>x_snc_employee_spe_occasions</name>
-            <plural>Numbers</plural>
+            <plural>Occasion days</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-05 22:06:08</sys_created_on>
-            <sys_id>20cd58b51b490010411dea8bbc4bcbe5</sys_id>
+            <sys_created_on>2019-11-11 20:23:20</sys_created_on>
+            <sys_id>3ab0d57d1b0d0010411dea8bbc4bcb77</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Number</sys_name>
+            <sys_name>Occasion day</sys_name>
             <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
             <sys_policy/>
             <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_employee_spe_occasions_number_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_snc_employee_spe_occasions_occasion_day_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-05 22:06:08</sys_updated_on>
+            <sys_updated_on>2019-11-11 20:23:20</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

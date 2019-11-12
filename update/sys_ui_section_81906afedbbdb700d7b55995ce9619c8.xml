@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>e10acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>8030b1bcdb0d0010d20c2efd0b9619e6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_employee</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>650acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>4830b1bcdb0d0010d20c2efd0b9619e6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>employee_email</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>e50acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>8030b1bcdb0d0010d20c2efd0b9619f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>690acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>0430b1bcdb0d0010d20c2efd0b9619f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_occasion</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>e90acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>8430b1bcdb0d0010d20c2efd0b9619f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,55 @@
             <element>u_occasion_date</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-07 13:01:37</sys_created_on>
-            <sys_id>6d0acb07db7df700d7b55995ce961971</sys_id>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>0830b1bcdb0d0010d20c2efd0b9619f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-07 13:01:37</sys_updated_on>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>private</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-08 20:06:50</sys_created_on>
+            <sys_id>8830b1bcdb0d0010d20c2efd0b9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-08 20:06:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>occasion_month</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-11 20:23:19</sys_created_on>
+            <sys_id>fab0d57d1b0d0010411dea8bbc4bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-11 20:23:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>occasion_day</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-11 20:23:19</sys_created_on>
+            <sys_id>7eb0d57d1b0d0010411dea8bbc4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_employee_spe_occasions" sys_domain="global" view="Default view">81906afedbbdb700d7b55995ce9619c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-11 20:23:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
