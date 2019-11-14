@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>email.subject.toLowerCase().indexOf("incorrect birthday") &gt;= 0</condition_script>
+        <description>Replies to birthday greetings are unexpected. This Inbound Action creates an Incident record to follow up with any replies received from a birthday greeting.</description>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Incorrect Birthday Incident</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Create Incident for follow up with details from the  
+	// received email
+	var newInc = new GlideRecord('incident');
+	newInc.short_description = "Fix incorrect birthday date";
+	newInc.description = email.body.comments;
+	newInc.insert();
+
+})(current, event, email, logger, classifier);
+
+
+]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-13 18:20:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8f34f1edb450010d20c2efd0b961915</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Incorrect Birthday Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sysevent_in_email_action_e8f34f1edb450010d20c2efd0b961915</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-13 20:30:23</sys_updated_on>
+        <table>x_snc_employee_spe_occasions</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

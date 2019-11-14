@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>02:00:00</entered_time>
+        <name>Check for Upcoming Occasions</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-11-14 03:30:58</run_start>
+        <run_time>1970-01-01 02:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[// Retrieve the value of the x_snc_employee_spe.daysNotice Application Property
+var daysNotice = gs.getProperty('x_snc_employee_spe.daysNotice');
+
+// Get today's date and add the number of days from the property
+var today = new GlideDateTime();
+var compareDate = today.addDaysLocalTime(daysNotice);
+
+// Get the month and day for the compareDate
+var month = compareDate.getMonthLocalTime();
+var day = compareDate.getDayOfMonthLocalTime();
+
+// Query the Occasion table for special days the match the compareDate
+var upcomingOccasion = new GlideRecord('x_snc_employee_spe_occasions');
+upcomingOccasion.addQuery('occasion_month',month);
+upcomingOccasion.addQuery('occasion_day',day);
+upcomingOccasion.addQuery('private',false);
+upcomingOccasion.query();
+
+// Create an event for every record found
+while(upcomingOccasion.next()){
+	gs.info("Occasion record: " + occToday.number);
+	gs.eventQueue('x_snc_employee_spe.employeeOccasion', occToday,occToday.number,occToday.u_employee.name,'my_queue');
+}
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-14 14:42:20</sys_created_on>
+        <sys_id>1ec545a6db450010d20c2efd0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check for Upcoming Occasions</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sysauto_script_1ec545a6db450010d20c2efd0b96195f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-14 14:42:20</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

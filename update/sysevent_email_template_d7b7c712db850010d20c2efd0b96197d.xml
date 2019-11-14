@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_snc_employee_spe_occasions</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Incorrect birthday date? Click here to correct the date.</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>mailto.incorrectbirthday</name>
+        <sms_alternate/>
+        <subject>Re: Incorrect birthday date</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-13 18:40:55</sys_created_on>
+        <sys_id>d7b7c712db850010d20c2efd0b96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mailto.incorrectbirthday</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sysevent_email_template_d7b7c712db850010d20c2efd0b96197d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-13 18:40:55</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

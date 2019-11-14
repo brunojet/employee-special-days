@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>AddCC</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */ event) {
+
+    // Add the Employee's manager to the birthday greeting as a CC
+	// current.u_employee.manager.email is coerced to a string
+	
+	email.addAddress('cc',current.u_employee.manager.email + '');
+
+})(current, template, email, email_action, event);
+
+
+]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-13 16:02:12</sys_created_on>
+        <sys_id>fa27a65edbc10010d20c2efd0b9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AddCC</sys_name>
+        <sys_package display_value="Employee Special Days" source="x_snc_employee_spe">c69feae6dbf1b700d7b55995ce961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Special Days">c69feae6dbf1b700d7b55995ce961921</sys_scope>
+        <sys_update_name>sys_script_email_fa27a65edbc10010d20c2efd0b9619c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-13 16:02:12</sys_updated_on>
+    </sys_script_email>
+</record_update>
